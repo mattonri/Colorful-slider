@@ -1,0 +1,42 @@
+:root {
+  --slider-color:rgb(148.5, 72, 143);
+  --thumb-color: rgb(180, 40, 205);
+}
+.preference {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: var(--slider-color);
+  outline: none;
+  opacity: .8;
+  -webkit-transition: .3s;
+  transition: opacity .3s;
+}
+.preference:hover{
+  opacity: 1;
+}
+.preference::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--thumb-color);
+  opacity: 1;
+  cursor: pointer;
+}
+.preference::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--thumb-color);
+  opacity: 1;
+  cursor: pointer;
+}
+#circle.preference {
+  height: 15px;
+  border-radius: 100px;
+}
+#circle.preference::-webkit-slider-thumb {
+  height: 25px;
+  width:25px;
+  border-radius: 50%;
+}
